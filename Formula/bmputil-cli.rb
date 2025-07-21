@@ -12,6 +12,7 @@ class BmputilCli < Formula
   end
 
   depends_on "rust" => :build
+  depends_on "openssl"
 
   def install
     system "cargo", "install", *std_cargo_args
